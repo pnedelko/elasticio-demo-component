@@ -1,0 +1,11 @@
+{
+    "title": "Demo component",
+    "description": "Demo",
+    "triggers": {
+        "emitSnapshot":{
+            "main": "./lib/triggers/emitSnapshot.js",
+            "title": "Emit snapshot",
+            "type": "polling"
+        }
+    }
+}
