@@ -1,9 +1,6 @@
 {
     "title": "Demo component",
     "description": "Demo",
-    "credentials" : {
-
-    },
     "triggers": {
         "emitSnapshot":{
             "main": "./lib/triggers/emitSnapshot.js",
@@ -26,6 +23,33 @@
             "title": "Dynamic metadata",
             "type": "polling",
             "dynamicMetadata": true
+        },
+        "uiElements": {
+            "main": "./lib/triggers/uiElements.js",
+            "title": "UI elements",
+            "type": "polling",
+            "fields": {
+                "selectView": {
+                    "viewClass": "SelectView",
+                    "prompt": "Choose one property",
+                    "label": "Select View",
+                    "model": {
+                        "1": "One",
+                        "2": "Two",
+                        "3": "Three"
+                    }
+                },
+                "checkBoxView": {
+                    "viewClass": "CheckBoxView",
+                    "prompt": "Check me!",
+                    "label": "CheckBox View"
+                },
+                "dateFieldView": {
+                    "viewClass": "DateFieldView",
+                    "prompt": "Check me!",
+                    "label": "CheckBox View"
+                }
+            }
         }
     },
     "actions": {
