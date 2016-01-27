@@ -1,6 +1,9 @@
 {
     "title": "Demo component",
     "description": "Demo",
+    "credentials" : {
+
+    },
     "triggers": {
         "emitSnapshot":{
             "main": "./lib/triggers/emitSnapshot.js",
