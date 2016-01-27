@@ -5,12 +5,23 @@
         "emitSnapshot":{
             "main": "./lib/triggers/emitSnapshot.js",
             "title": "Emit snapshot",
-            "type": "polling"
+            "type": "polling",
+            "metadata": {
+                "out": {
+                    "type": "object",
+                    "properties": {
+                        "iteration": {
+                            "type": "number",
+                            "title": "Iteration"
+                        }
+                    }
+                }
+            }
         }
     },
     "actions": {
         "emitRebound":{
-            "main": "./lib/triggers/emitRebound.js",
+            "main": "./lib/actions/emitRebound.js",
             "title": "Emit rebound"
         }
     }
