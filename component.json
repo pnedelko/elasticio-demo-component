@@ -31,7 +31,7 @@
             "fields": {
                 "selectView": {
                     "viewClass": "SelectView",
-                    "prompt": "Choose one property",
+                    "prompt": "Choose an option",
                     "label": "Select View",
                     "model": {
                         "1": "One",
@@ -46,8 +46,28 @@
                 },
                 "dateFieldView": {
                     "viewClass": "DateFieldView",
-                    "prompt": "Check me!",
-                    "label": "CheckBox View"
+                    "prompt": "Choose the date",
+                    "label": "DateField View"
+                },
+                "DateTimeFieldView": {
+                    "viewClass": "DateTimeFieldView",
+                    "prompt": "Choose the date and time",
+                    "label": "DateTimeField View"
+                },
+                "TextFieldView": {
+                    "viewClass": "TextFieldView",
+                    "prompt": "Enter a text",
+                    "label": "TextField View"
+                },
+                "TextAreaView": {
+                    "viewClass": "TextAreaView",
+                    "prompt": "Enter a text",
+                    "label": "TextArea View"
+                },
+                "TimeFieldView": {
+                    "viewClass": "TimeFieldView",
+                    "prompt": "Choose the time",
+                    "label": "TimeField View"
                 }
             }
         }
