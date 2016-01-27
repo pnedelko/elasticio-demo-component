@@ -17,6 +17,12 @@
                     }
                 }
             }
+        },
+        "dynamicMetadata": {
+            "main": "./lib/triggers/dynamicMetadata.js",
+            "title": "Dynamic metadata",
+            "type": "polling",
+            "dynamicMetadata": true
         }
     },
     "actions": {
