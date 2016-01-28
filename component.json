@@ -29,31 +29,6 @@
             "title": "UI elements",
             "type": "polling",
             "fields": {
-                "selectView": {
-                    "viewClass": "SelectView",
-                    "prompt": "Choose an option",
-                    "label": "Select View",
-                    "model": {
-                        "1": "One",
-                        "2": "Two",
-                        "3": "Three"
-                    }
-                },
-                "checkBoxView": {
-                    "viewClass": "CheckBoxView",
-                    "prompt": "Check me!",
-                    "label": "CheckBox View"
-                },
-                "dateFieldView": {
-                    "viewClass": "DateFieldView",
-                    "prompt": "Choose the date",
-                    "label": "DateField View"
-                },
-                "DateTimeFieldView": {
-                    "viewClass": "DateTimeFieldView",
-                    "prompt": "Choose the date and time",
-                    "label": "DateTimeField View"
-                },
                 "TextFieldView": {
                     "viewClass": "TextFieldView",
                     "prompt": "Enter a text",
@@ -63,6 +38,31 @@
                     "viewClass": "TextAreaView",
                     "prompt": "Enter a text",
                     "label": "TextArea View"
+                },
+                "CheckBoxView": {
+                    "viewClass": "CheckBoxView",
+                    "prompt": "Check me!",
+                    "label": "CheckBox View"
+                },
+                "SelectView": {
+                    "viewClass": "SelectView",
+                    "prompt": "Choose an option",
+                    "label": "Select View",
+                    "model": {
+                        "1": "One",
+                        "2": "Two",
+                        "3": "Three"
+                    }
+                },
+                "DateFieldView": {
+                    "viewClass": "DateFieldView",
+                    "prompt": "Choose the date",
+                    "label": "DateField View"
+                },
+                "DateTimeFieldView": {
+                    "viewClass": "DateTimeFieldView",
+                    "prompt": "Choose the date and time",
+                    "label": "DateTimeField View"
                 },
                 "TimeFieldView": {
                     "viewClass": "TimeFieldView",
