@@ -73,7 +73,7 @@
         },
         "dependentFields": {
             "main": "./lib/triggers/dependentFieldsDemo.js",
-            "title": "UI elements",
+            "title": "Dependent config fields",
             "type": "polling",
             "fields": {
                 "textOne": {
