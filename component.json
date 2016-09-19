@@ -82,7 +82,7 @@
       }
     },
     "dependentFields": {
-      "main": "./lib/triggers/dependentFieldsDemo.js",
+      "main": "./lib/triggers/dependentFields.js",
       "title": "Dependent config fields",
       "type": "polling",
       "fields": {
@@ -98,8 +98,9 @@
           "label": "Select one",
           "required": true,
           "model": {
-            "1": "one",
-            "2": "two"
+            "1": "Select one value 1",
+            "2": "Select one value 2",
+            "3": "Select one value 3"
           }
         },
         "selectTwo": {
