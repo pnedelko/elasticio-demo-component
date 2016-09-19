@@ -98,9 +98,9 @@
           "label": "Select one",
           "required": true,
           "model": {
-            "1": "Select one value 1",
-            "2": "Select one value 2",
-            "3": "Select one value 3"
+            "SelectOneValue1": "Select one value 1",
+            "SelectOneValue2": "Select one value 2",
+            "SelectOneValue3": "Select one value 3"
           }
         },
         "selectTwo": {
