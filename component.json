@@ -1,115 +1,125 @@
 {
-    "title": "Demo component",
-    "description": "Demo",
-    "triggers": {
-        "emitSnapshot":{
-            "main": "./lib/triggers/emitSnapshot.js",
-            "title": "Emit snapshot",
-            "type": "polling",
-            "metadata": {
-                "out": {
-                    "type": "object",
-                    "properties": {
-                        "iteration": {
-                            "type": "number",
-                            "title": "Iteration"
-                        }
-                    }
-                }
-            }
-        },
-        "dynamicMetadata": {
-            "main": "./lib/triggers/dynamicMetadata.js",
-            "title": "Dynamic metadata",
-            "type": "polling",
-            "dynamicMetadata": true
-        },
-        "uiElements": {
-            "main": "./lib/triggers/uiElements.js",
-            "title": "UI elements",
-            "type": "polling",
-            "fields": {
-                "TextFieldView": {
-                    "viewClass": "TextFieldView",
-                    "prompt": "Enter a text",
-                    "label": "TextField View"
-                },
-                "TextAreaView": {
-                    "viewClass": "TextAreaView",
-                    "prompt": "Enter a text",
-                    "label": "TextArea View"
-                },
-                "CheckBoxView": {
-                    "viewClass": "CheckBoxView",
-                    "prompt": "Check me!",
-                    "label": "CheckBox View"
-                },
-                "SelectView": {
-                    "viewClass": "SelectView",
-                    "prompt": "Choose an option",
-                    "label": "Select View",
-                    "model": {
-                        "1": "One",
-                        "2": "Two",
-                        "3": "Three"
-                    }
-                },
-                "DateFieldView": {
-                    "viewClass": "DateFieldView",
-                    "prompt": "Choose the date",
-                    "label": "DateField View"
-                },
-                "DateTimeFieldView": {
-                    "viewClass": "DateTimeFieldView",
-                    "prompt": "Choose the date and time",
-                    "label": "DateTimeField View"
-                },
-                "TimeFieldView": {
-                    "viewClass": "TimeFieldView",
-                    "prompt": "Choose the time",
-                    "label": "TimeField View"
-                }
-            }
-        },
-        "dependentFields": {
-            "main": "./lib/triggers/dependentFieldsDemo.js",
-            "title": "Dependent config fields",
-            "type": "polling",
-            "fields": {
-                "textOne": {
-                    "viewClass": "TextFieldView",
-                    "label": "Text one",
-                    "required": true,
-                    "placeholder": "Text"
-                },
-                "selectOne": {
-                    "viewClass": "SelectView",
-                    "prompt": "Select me",
-                    "label": "Select one",
-                    "required": true,
-                    "model": {
-                        "1": "one",
-                        "2": "two"
-                    }
-                },
-                "selectTwo": {
-                    "viewClass": "SelectView",
-                    "prompt": "Select me",
-                    "label": "Depends on 'Text one' and 'Select one'",
-                    "model": "selectTwo",
-                    "required": true,
-                    "require":[
-                        "selectOne",
-                        "textOne"
-                    ]
-                }
-            }
-        }
-    },
-    "actions": {
-        "emitRebound":{
-            "main": "./lib/actions/emitRebound.js",
-            "title": "Emit rebound"
-        }
+  "title": "Demo component",
+  "description": "Demo",
+  "credentials": {
+    "fields": {
+      "name": {
+        "viewClass": "TextFieldView",
+        "label": "Name",
+        "placeholder": "Enter your name",
+        "required": false
+      }
     }
+  },
+  "triggers": {
+    "emitSnapshot": {
+      "main": "./lib/triggers/emitSnapshot.js",
+      "title": "Emit snapshot",
+      "type": "polling",
+      "metadata": {
+        "out": {
+          "type": "object",
+          "properties": {
+            "iteration": {
+              "type": "number",
+              "title": "Iteration"
+            }
+          }
+        }
+      }
+    },
+    "dynamicMetadata": {
+      "main": "./lib/triggers/dynamicMetadata.js",
+      "title": "Dynamic metadata",
+      "type": "polling",
+      "dynamicMetadata": true
+    },
+    "uiElements": {
+      "main": "./lib/triggers/uiElements.js",
+      "title": "UI elements",
+      "type": "polling",
+      "fields": {
+        "TextFieldView": {
+          "viewClass": "TextFieldView",
+          "prompt": "Enter a text",
+          "label": "TextField View"
+        },
+        "TextAreaView": {
+          "viewClass": "TextAreaView",
+          "prompt": "Enter a text",
+          "label": "TextArea View"
+        },
+        "CheckBoxView": {
+          "viewClass": "CheckBoxView",
+          "prompt": "Check me!",
+          "label": "CheckBox View"
+        },
+        "SelectView": {
+          "viewClass": "SelectView",
+          "prompt": "Choose an option",
+          "label": "Select View",
+          "model": {
+            "1": "One",
+            "2": "Two",
+            "3": "Three"
+          }
+        },
+        "DateFieldView": {
+          "viewClass": "DateFieldView",
+          "prompt": "Choose the date",
+          "label": "DateField View"
+        },
+        "DateTimeFieldView": {
+          "viewClass": "DateTimeFieldView",
+          "prompt": "Choose the date and time",
+          "label": "DateTimeField View"
+        },
+        "TimeFieldView": {
+          "viewClass": "TimeFieldView",
+          "prompt": "Choose the time",
+          "label": "TimeField View"
+        }
+      }
+    },
+    "dependentFields": {
+      "main": "./lib/triggers/dependentFieldsDemo.js",
+      "title": "Dependent config fields",
+      "type": "polling",
+      "fields": {
+        "textOne": {
+          "viewClass": "TextFieldView",
+          "label": "Text one",
+          "required": true,
+          "placeholder": "Text"
+        },
+        "selectOne": {
+          "viewClass": "SelectView",
+          "prompt": "Select me",
+          "label": "Select one",
+          "required": true,
+          "model": {
+            "1": "one",
+            "2": "two"
+          }
+        },
+        "selectTwo": {
+          "viewClass": "SelectView",
+          "prompt": "Select me",
+          "label": "Depends on 'Text one' and 'Select one'",
+          "model": "selectTwo",
+          "required": true,
+          "require": [
+            "selectOne",
+            "textOne"
+          ]
+        }
+      }
+    }
+  },
+  "actions": {
+    "emitRebound": {
+      "main": "./lib/actions/emitRebound.js",
+      "title": "Emit rebound"
+    }
+  }
 }
