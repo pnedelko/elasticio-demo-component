@@ -6,8 +6,12 @@
         "test": "exit 0"
     },
     "author": "elastic.io GmbH",
+    "engines": {
+        "node": "^12"
+    },
     "dependencies": {
         "q": "^1.4.1",
-        "elasticio-node": "0.0.5"
+        "elasticio-node": "0.0.5",
+        "elasticio-sailor-nodejs": "latest"
     }
 }
