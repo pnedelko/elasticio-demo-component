@@ -42,17 +42,20 @@
         "TextFieldView": {
           "viewClass": "TextFieldView",
           "prompt": "Enter a text",
-          "label": "TextField View"
+          "label": "TextField View",
+          "note": "Some note"
         },
         "TextAreaView": {
           "viewClass": "TextAreaView",
           "prompt": "Enter a text",
-          "label": "TextArea View"
+          "label": "TextArea View",
+          "note": "Some note"
         },
         "CheckBoxView": {
           "viewClass": "CheckBoxView",
           "prompt": "Check me!",
-          "label": "CheckBox View"
+          "label": "CheckBox View",
+          "note": "Some note"
         },
         "SelectView": {
           "viewClass": "SelectView",
@@ -62,7 +65,8 @@
             "1": "One",
             "2": "Two",
             "3": "Three"
-          }
+          },
+          "note": "Some note"
         },
         "DateFieldView": {
           "viewClass": "DateFieldView",
